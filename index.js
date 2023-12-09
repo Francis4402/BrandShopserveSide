@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-
+console.log(process.env.User_DB);
 
 const uri = `mongodb+srv://${process.env.User_DB}:${process.env.User_pass}@cluster0.cefd8nv.mongodb.net/?retryWrites=true&w=majority`;
 
